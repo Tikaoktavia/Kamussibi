@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.blesscom.kamusisyarat">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <!-- Splash screen -->
+        <activity
+            android:name="com.example.blesscom.kamusisyarat.Splashscreen"
+            android:label="@string/app_name"
+            android:theme="@style/Splashscreen"
+            android:screenOrientation="portrait"
+            android:noHistory="true" >
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>  <activity android:name="com.example.blesscom.kamusisyarat.AngkaHuruf"/>
+        <activity android:name="com.example.blesscom.kamusisyarat.Kamus"/>
+        <activity android:name="com.example.blesscom.kamusisyarat.Imbuhan"/>
+        <activity android:name="com.example.blesscom.kamusisyarat.TunaGrahita"/>
+        <activity android:name="com.example.blesscom.kamusisyarat.TentangApk"/>
+        <activity android:name="com.example.blesscom.kamusisyarat.SubAngka"/>
+        <activity android:name="com.example.blesscom.kamusisyarat.SubHuruf"/>
+        <activity android:name="com.example.blesscom.kamusisyarat.Awal"/>
+        <activity android:name="com.example.blesscom.kamusisyarat.Akhir"/>
+        <activity android:name="com.example.blesscom.kamusisyarat.Partikel"/><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- Main activity -->
+        <activity
+            android:name="com.example.blesscom.kamusisyarat.MainActivity"
+
+            android:label="@string/app_name" >
+        </activity>
+
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+</manifest>
